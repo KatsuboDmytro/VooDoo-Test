@@ -1,0 +1,11 @@
+.card:hover > button {
+    display: block;
+}
+
+.card > button {
+    display: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
