@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}", "./src/components/header/header.html"],
+  content: ["./src/**/*.{html,js}"],
+  purge: [],
   theme: {
     extend: {
       fontFamily: {
@@ -17,12 +18,23 @@ module.exports = {
         '402': '402px',
         '518': '518px',
         '635': '635px',
+
+        '(-48)': '-48px',
       },
       screens: {
         'xsm': '340px',
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss'),
+    require('postcss-purgecss')({
+      content: ['./src/**/*.html', './src/**/*.js'],
+      defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || [],
+    }),
+    require('cssnano')({
+      preset: 'default',
+    }),
+  ],
 }
 

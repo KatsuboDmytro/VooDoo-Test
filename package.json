@@ -11,5 +11,10 @@
   "license": "ISC",
   "devDependencies": {
     "tailwindcss": "^3.3.2"
+  },
+  "dependencies": {
+    "cssnano": "^6.0.1",
+    "postcss": "^8.4.23",
+    "postcss-purgecss": "^5.0.0"
   }
 }
