@@ -3,6 +3,15 @@
 const signUp = document.querySelector('.signUp');
 const modal = document.querySelector('.modal');
 signUp.addEventListener('click', () => {
+    if(signUp.innerHTML == 'Sign-up') {
+        signUp.innerHTML = 'Log-out';
+        modal.innerHTML = 'Successfully signed-up';
+    }
+    else {
+        signUp.innerHTML = 'Sign-up';
+        modal.innerHTML = 'Successfully logged-out';
+    }
+
     modal.classList.remove('mt-(-48)');
     modal.classList.add('mt-0');
     setTimeout(() => {
