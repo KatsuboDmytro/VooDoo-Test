@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
-  purge: ['./src/**/*.{html,js}'],
+  content: ["./**/*.{html,js}"],
+  purge: ['./**/*.{html,js}'],
   theme: {
     extend: {
       fontFamily: {
@@ -29,7 +29,7 @@ module.exports = {
   plugins: [
     require('tailwindcss'),
     require('postcss-purgecss')({
-      content: ['./src/**/*.html', './src/**/*.js'],
+      content: ['./**/*.html', './src/**/*.js'],
       defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || [],
     }),
     require('cssnano')({
