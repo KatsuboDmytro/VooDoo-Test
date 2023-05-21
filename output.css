@@ -681,9 +681,43 @@ video {
   margin: 0.75rem;
 }
 
+.m-6 {
+  margin: 1.5rem;
+}
+
+.mx-6 {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.mx-5 {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.mx-3 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.mx-1 {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
 }
 
 .mb-20 {
@@ -2033,8 +2067,8 @@ video {
   padding-bottom: 0.75rem;
 }
 
-.pl-10 {
-  padding-left: 2.5rem;
+.pl-11 {
+  padding-left: 2.75rem;
 }
 
 .pl-2 {
@@ -2045,16 +2079,12 @@ video {
   padding-left: 1rem;
 }
 
-.pl-8 {
-  padding-left: 2rem;
-}
-
 .pr-1 {
   padding-right: 0.25rem;
 }
 
-.pr-10 {
-  padding-right: 2.5rem;
+.pr-11 {
+  padding-right: 2.75rem;
 }
 
 .pr-2 {
@@ -2659,16 +2689,16 @@ video {
     padding-bottom: 0.75rem;
   }
 
-  .sm\:pl-10 {
-    padding-left: 2.5rem;
+  .sm\:pl-11 {
+    padding-left: 2.75rem;
   }
 
   .sm\:pl-12 {
     padding-left: 3rem;
   }
 
-  .sm\:pr-10 {
-    padding-right: 2.5rem;
+  .sm\:pr-11 {
+    padding-right: 2.75rem;
   }
 
   .sm\:pr-12 {
